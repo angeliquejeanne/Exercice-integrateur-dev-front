@@ -1,13 +1,4 @@
-/*
- /$$$$$$$$ /$$$$$$  /$$   /$$ /$$$$$$$$
-| $$_____//$$__  $$| $$$ | $$|__  $$__/
-| $$     | $$  \ $$| $$$$| $$   | $$   
-| $$$$$  | $$  | $$| $$ $$ $$   | $$   
-| $$__/  | $$  | $$| $$  $$$$   | $$   
-| $$     | $$  | $$| $$\  $$$   | $$   
-| $$     |  $$$$$$/| $$ \  $$   | $$   
-|__/      \______/ |__/  \__/   |__/   
-*/
+/* FONTS */
 
 /* Montserrat Regular - latin */
 @font-face {
@@ -27,6 +18,7 @@
     font-display: swap;
 }
 
+/* COLORS */
 :root {
     --white: #FFF;
     --black: #0A0907;
@@ -45,19 +37,12 @@
     --green: #03BA79;
 }
 
-/*
- /$$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$$ /$$$$$$$$
-| $$__  $$| $$_____/ /$$__  $$| $$_____/|__  $$__/
-| $$  \ $$| $$      | $$  \__/| $$         | $$   
-| $$$$$$$/| $$$$$   |  $$$$$$ | $$$$$      | $$   
-| $$__  $$| $$__/    \____  $$| $$__/      | $$   
-| $$  \ $$| $$       /$$  \ $$| $$         | $$   
-| $$  | $$| $$$$$$$$|  $$$$$$/| $$$$$$$$   | $$   
-|__/  |__/|________/ \______/ |________/   |__/ 
-*/
+/* RESET */
 
-*, *:before, *:after {
+*, ::before, ::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -66,17 +51,11 @@ html {
 
 body {
     background-color: var(--white);
-    
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 500;
     color: var(--txt);
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
     font-weight: normal;
 }
 
@@ -95,16 +74,7 @@ button {
     text-align: left;
 }
 
-/*
- /$$   /$$ /$$$$$$$$ /$$$$$$ /$$        /$$$$$$ 
-| $$  | $$|__  $$__/|_  $$_/| $$       /$$__  $$
-| $$  | $$   | $$     | $$  | $$      | $$  \__/
-| $$  | $$   | $$     | $$  | $$      |  $$$$$$ 
-| $$  | $$   | $$     | $$  | $$       \____  $$
-| $$  | $$   | $$     | $$  | $$       /$$  \ $$
-|  $$$$$$/   | $$    /$$$$$$| $$$$$$$$|  $$$$$$/
- \______/    |__/   |______/|________/ \______/ 
-*/
+/* UTILS */
 
 .sr-only {
     position: absolute;
@@ -118,21 +88,11 @@ button {
 	border: 0;
 }
 
-/*
- /$$$$$$  /$$$$$$   /$$$$$$  /$$   /$$
-|_  $$_/ /$$__  $$ /$$__  $$| $$$ | $$
-  | $$  | $$  \__/| $$  \ $$| $$$$| $$
-  | $$  | $$      | $$  | $$| $$ $$ $$
-  | $$  | $$      | $$  | $$| $$  $$$$
-  | $$  | $$    $$| $$  | $$| $$\  $$$
- /$$$$$$|  $$$$$$/|  $$$$$$/| $$ \  $$
-|______/ \______/  \______/ |__/  \__/
-*/
+/* ICON */
 
 .icon {
     /* display: block; */
     padding: 1rem;
-
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -140,23 +100,13 @@ button {
 .icon-shop {
     width: 2.4rem;
     height: 2.4rem;
-
     background-image: url("../img/icon/shopping-cart.png");
     background-size: 100%;
-
     filter: invert(1);
 }
 
-/*
- /$$   /$$ /$$   /$$
-| $$  | $$| $$$ | $$
-| $$  | $$| $$$$| $$
-| $$$$$$$$| $$ $$ $$
-| $$__  $$| $$  $$$$
-| $$  | $$| $$\  $$$
-| $$  | $$| $$ \  $$
-|__/  |__/|__/  \__/
-*/
+/* h(n) */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
@@ -189,16 +139,7 @@ h5, h6 {
     margin: 0 auto;
 }
 
-/*
- /$$   /$$ /$$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$$$ /$$$$$$$ 
-| $$  | $$| $$_____/ /$$__  $$| $$__  $$| $$_____/| $$__  $$
-| $$  | $$| $$      | $$  \ $$| $$  \ $$| $$      | $$  \ $$
-| $$$$$$$$| $$$$$   | $$$$$$$$| $$  | $$| $$$$$   | $$$$$$$/
-| $$__  $$| $$__/   | $$__  $$| $$  | $$| $$__/   | $$__  $$
-| $$  | $$| $$      | $$  | $$| $$  | $$| $$      | $$  \ $$
-| $$  | $$| $$$$$$$$| $$  | $$| $$$$$$$/| $$$$$$$$| $$  | $$
-|__/  |__/|________/|__/  |__/|_______/ |________/|__/  |__/
-*/
+/* HEADER */
 
 .header {
     padding: 2rem;
@@ -262,18 +203,13 @@ h5, h6 {
 .header-nav-link {
     display: inline-block;
     padding: 1.4rem 3.4rem 1.2rem;
-
     border-radius: 2rem;
-
     background-color: var(--green-medium);
-
     text-decoration: none;
     color: var(--black);
     font-weight: 700;
     line-height: 1;
-
     box-shadow: 0 0 0 0rem rgba(205, 203, 69, 0);
-
     transition: box-shadow 0.3s ease;
 }
 
@@ -290,15 +226,11 @@ h5, h6 {
     display: block;
     width: 100%;
     height: 4.2rem;
-
     padding-left: 2rem;
     padding-right: 5rem;
-
     border: 0.2rem solid var(--red);
     border-radius: 4rem;
-
     background-color: var(--white);
-    outline: none;
     color: var(--txt);
     font-size: 1.6rem;
 }
@@ -308,32 +240,29 @@ h5, h6 {
     top: 0.4rem;
     right: 0.4rem;
     z-index: 2;
-
     padding: 0.8rem;
-
     width: 3.4rem;
     height: 3.4rem;
-
     border-radius: 100%;
-
     background-color: var(--red);
-
     text-align: center;
-    outline: none;
     color: var(--white);
     font-weight: 700;
 }
+.header-search-btn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--red);
+}
+.header-search-btn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--red);
+}
+.header-search-btn:hover svg {
+    fill: var(--red);
+}
 
-/*
- /$$$$$$$$ /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
-| $$_____//$$__  $$ /$$__  $$|__  $$__/| $$_____/| $$__  $$
-| $$     | $$  \ $$| $$  \ $$   | $$   | $$      | $$  \ $$
-| $$$$$  | $$  | $$| $$  | $$   | $$   | $$$$$   | $$$$$$$/
-| $$__/  | $$  | $$| $$  | $$   | $$   | $$__/   | $$__  $$
-| $$     | $$  | $$| $$  | $$   | $$   | $$      | $$  \ $$
-| $$     |  $$$$$$/|  $$$$$$/   | $$   | $$$$$$$$| $$  | $$
-|__/      \______/  \______/    |__/   |________/|__/  |__/
-*/
+
+/* FOOTER */
 
 .footer {
     padding: 4rem 2rem;
@@ -371,11 +300,8 @@ h5, h6 {
 .shoppingcart {
     padding: 1rem;
     width: 22rem;
-
     border-radius: 2rem;
-
     background-color: var(--green-dark);
-    
     color: var(--white);
 }
 
@@ -407,11 +333,14 @@ h5, h6 {
 .shoppingcart-btn {
     width: 2.4rem;
     height: 2.4rem;
-    
     border-radius: 3rem;
-
     background: var(--black) url('../img/icon/close.svg') center center no-repeat;
     background-size: 1rem;
+    cursor: pointer;
+}
+.shoppingcart-btn:hover {
+    border: 1px solid var(--white);
+    color: yellow;
 }
 
 .shoppingcart-valided {
@@ -425,12 +354,19 @@ h5, h6 {
 
 .shoppingcart-valided button {
     display: inline-block;
-    padding: 0.4rem 1.4rem; 
-
+    padding: 0.4rem 1.4rem;   
     border-radius: 3rem;
+    border: 1px solid var(--black);
     background-color: var(--black);
     font-size: 1.3rem;
     color: var(--white);
+    cursor: pointer;
+}
+
+.shoppingcart-valided button:hover {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
 }
 
 /*
@@ -454,7 +390,7 @@ h5, h6 {
 
 .section-2 {
     background-color: var(--orange);
-    color: var(--white);
+    color: var(--txt);
 }
 
 .section-3 {
@@ -510,12 +446,9 @@ h5, h6 {
     display: inline-block;
     margin: 2rem 1rem 1rem 0;
     padding: 1.4rem 2rem;
-
     border-radius: 3rem;
-    
     background-color: var(--green);
-    
-    color: var(--white);
+    color: var(--black);
     font-weight: 700;
     line-height: 1;
 }
@@ -578,6 +511,7 @@ table {
     width: 50%;
     border-radius: 1rem;
     background-color: var(--txt);
+    color: var(--white);
     font-size: 2rem;
 }
 
@@ -658,6 +592,9 @@ table {
     color: var(--white);
     font-size: 1.4rem;
 }
+.form-block {
+    border: none;
+}
 
 .form-block + .form-block {
     margin-top: 2rem;
@@ -683,4 +620,12 @@ table {
     background-color: transparent;
     color: var(--white);
     border-color: var(--white);
+}
+fieldset .choice-civility {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+fieldset .choice-civility label {
+    margin-left: 1rem;
 }

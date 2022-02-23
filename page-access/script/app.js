@@ -26,7 +26,7 @@
                 $('#shoppingcart-list').append('\
                     <div class="shoppingcart-item">\
                         <span class="shoppingcart-txt">'+dataShop+'</span>\
-                        <a href="#" class="shoppingcart-btn" data-id-parent="'+data_id_parent+'"><span class="sr-only">Supprimer</span></a>\
+                        <button href="#" class="shoppingcart-btn" data-id-parent="'+data_id_parent+'"><span class="sr-only">Supprimer</span></button>\
                     </div>\
                 ');
     

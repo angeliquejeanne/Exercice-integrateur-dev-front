@@ -3,31 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <!-- 
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * *                                                                             * * 
-    * *    Instructions :                                                           * *
-    * *    - Corriger les erreurs d'accessibilité dans cette page web            * *
-    * *    - Vous pouvez :                                                          * *
-    * *    -- Modifier le code HTML                                                 * *
-    * *    -- Modifier le code CSS                                                  * *
-    * *    -- Modifier le code JS                                                   * *
-    * *                                                                             * *
-    * *    Conseils :                                                               * *
-    * *    - Installer les plugins d'access Chrome ou/et Firefox                    * *
-    * *    -> https://formation.warren-walter.com/_liste-plugin/accessibilite-liste-des-plugins-et-logiciels.pdf
-    * *                                                                             * *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    -->
-    
     <div class="container">
 
         <div class="header">
@@ -58,10 +39,14 @@
                 <!-- Rechercher -->
                 <div class="header-search">
                     <form action="#" class="header-search-form">
-                        <input type="text" class="header-search-input">
-                        <button class="header-search-btn">
+                        <input type="text" class="header-search-input" placeholder="Recherchez">
+                        <button class="header-search-btn" aria-label="Effectuez votre recherche">
                             <span class="sr-only">OK</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#FFFFFF"><path d="M225.474 0C101.151 0 0 101.151 0 225.474c0 124.33 101.151 225.474 225.474 225.474 124.33 0 225.474-101.144 225.474-225.474C450.948 101.151 349.804 0 225.474 0zm0 409.323c-101.373 0-183.848-82.475-183.848-183.848S124.101 41.626 225.474 41.626s183.848 82.475 183.848 183.848-82.475 183.849-183.848 183.849z"/><path d="M505.902 476.472L386.574 357.144c-8.131-8.131-21.299-8.131-29.43 0-8.131 8.124-8.131 21.306 0 29.43l119.328 119.328A20.74 20.74 0 00491.187 512a20.754 20.754 0 0014.715-6.098c8.131-8.124 8.131-21.306 0-29.43z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#FFFFFF" aria-hidden="true">
+                                <title></title>
+                                <path d="M225.474 0C101.151 0 0 101.151 0 225.474c0 124.33 101.151 225.474 225.474 225.474 124.33 0 225.474-101.144 225.474-225.474C450.948 101.151 349.804 0 225.474 0zm0 409.323c-101.373 0-183.848-82.475-183.848-183.848S124.101 41.626 225.474 41.626s183.848 82.475 183.848 183.848-82.475 183.849-183.848 183.849z"/>
+                                <path d="M505.902 476.472L386.574 357.144c-8.131-8.131-21.299-8.131-29.43 0-8.131 8.124-8.131 21.306 0 29.43l119.328 119.328A20.74 20.74 0 00491.187 512a20.754 20.754 0 0014.715-6.098c8.131-8.124 8.131-21.306 0-29.43z"/>
+                            </svg>                        
                         </button>
                     </form>
                 </div>
@@ -78,7 +63,7 @@
                     </ul>
 
                     <div class="shoppingcart-valided" aria-hidden="true">
-                        <button type="button">Valider votre panier</button>
+                        <button type="button" title="Valider votre panier">Valider votre panier</button>
                     </div>
                 </div>
                 <!-- / Panier -->
@@ -108,7 +93,9 @@
                 <div class="product-container">
                     
                     <article class="product-item" id="product-item-1" data-shop="Lac : 1099 €">
-                        <div class="product-img"><img src="./img/product/s-migaj-unsplash.jpg" alt="Un homme assis sur un ponton regardant un lac."></div>
+                        <div class="product-img">
+                            <img src="./img/product/s-migaj-unsplash.jpg" alt="">
+                        </div>
                         
                         <h4 class="product-title">Lacs</h4>
                         
@@ -123,7 +110,9 @@
                     </article>
 
                     <article class="product-item" id="product-item-2" data-shop="Canyon : 1199 €">
-                        <div class="product-img"><img src="./img/product/drif-riadh-unsplash.jpg" alt="Une femme admirant un canyon."></div>
+                        <div class="product-img">
+                            <img src="./img/product/drif-riadh-unsplash.jpg" alt="">
+                        </div>
                         
                         <h4 class="product-title">Canyon</h4>
                         
@@ -138,7 +127,9 @@
                     </article>
 
                     <article class="product-item" id="product-item-3" data-shop="Cascade : 1299 €">
-                        <div class="product-img"><img src="./img/product/stefan-stefancik-unsplash.jpg" alt="Un homme devant une cascade d'eau."></div>
+                        <div class="product-img">
+                            <img src="./img/product/stefan-stefancik-unsplash.jpg" alt="">
+                        </div>
                         
                         <h4 class="product-title">Cascades</h4>
                         
@@ -200,21 +191,17 @@
 
                 <form action="#" class="form">
 
-                    <div class="form-block">
-                        <p>Civilité *</p>
-                        <div>
-                            <label>
-                                <input type="radio">
-                                Madame
-                            </label>
+                    <fieldset class="form-block">
+                        <legend>Civilité *</legend>
+                        <div class="choice-civility">
+                            <input type="radio" id="madame" name="civilite" checked>
+                            <label for="madame">Madame</label>
                         </div>
-                        <div>
-                            <label>
-                                <input type="radio">
-                                Monsieur
-                            </label>
+                        <div class="choice-civility">
+                            <input type="radio" id="monsieur" name="civilite">
+                            <label for="monsieur">Monsieur</label>
                         </div>
-                    </div>
+                    </fieldset>
 
                     <div class="form-block">
                         <label>Prénom *</label>
