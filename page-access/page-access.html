@@ -40,7 +40,7 @@
                 <!-- Rechercher -->
                 <div class="header-search">
                     <form action="#" class="header-search-form">
-                        <input type="text" class="header-search-input" placeholder="Recherchez">
+                        <input type="search" class="header-search-input" placeholder="Recherchez" title="Recherchez">
                         <button class="header-search-btn" aria-label="Effectuez votre recherche">
                             <span class="sr-only">OK</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#FFFFFF" aria-hidden="true">
@@ -191,41 +191,43 @@
                 <div class="inner">
 
                     <h2>Nous contacter</h2>
+                    <span>Tous les champs avec un * sont obligatoires</span>
 
                     <form action="#" class="form">
 
                         <fieldset class="form-block">
                             <legend>Civilité *</legend>
                             <div class="choice-civility">
-                                <input type="radio" id="madame" name="civilite" checked>
+                                <input type="radio" id="madame" checked>
                                 <label for="madame">Madame</label>
                             </div>
                             <div class="choice-civility">
-                                <input type="radio" id="monsieur" name="civilite">
+                                <input type="radio" id="monsieur" >
                                 <label for="monsieur">Monsieur</label>
                             </div>
                         </fieldset>
 
                         <div class="form-block">
-                            <label>Prénom *</label>
-                            <input type="text">
+                            <label for="firstName">Prénom *</label>
+                            <input id="firstName" type="text" placeholder="John" aria-required="true" required>
                             <span class="form-error">Champ obligatoire</span>
                         </div>
 
                         <div class="form-block">
-                            <label>Nom *</label>
-                            <input type="text" value="Dupont">
+                            <label for="lastName">Nom *</label>
+                            <input id="lastName" type="text" placeholder="Dupont" aria-required="true" required>
+                            <span class="form-error">Champ obligatoire</span>
                         </div>
 
                         <div class="form-block">
-                            <label>Téléphone *</label>
-                            <input type="text" value="010203040506">
-                            <span class="form-error">Champ en erreur</span>
+                            <label for="phone">Téléphone *</label>
+                            <input id="phone" type="text" placeholder="06 ou 03" aria-required="true" required>
+                            <span class="form-error">Champ obligatoire</span>
                         </div>
 
                         <div class="form-block">
-                            <label>Email *</label>
-                            <input type="email">
+                            <label for="email">Email *</label>
+                            <input id="email" type="email" placeholder="monmail@mail.com" aria-required="true" required>
                             <span class="form-error">Champ obligatoire</span>
                         </div>
 
