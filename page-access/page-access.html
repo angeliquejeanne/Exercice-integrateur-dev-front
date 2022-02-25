@@ -20,7 +20,7 @@
                 <div class="header-logo">
                     <a href="#" class="header-logo-link">
                         <img src="./img/logo.png" alt="/" class="header-logo-img" alt="logo de Backpack" aria-hidden="true">
-                        <span class="header-logo-baseline">Backpack</span>
+                        <h1 class="header-logo-baseline">Backpack</h1>
                     </a>
                 </div>
                 
@@ -87,7 +87,7 @@
 
         <main>
             <!-- Produit ajout panier -->
-            <div id="section-1" class="section section-1">
+            <section id="section-1" class="section section-1">
                 <div class="inner">
 
                     <h2>Nos voyages</h2>
@@ -149,11 +149,11 @@
 
                 </div>
                 <!-- / inner -->
-            </div>
+            </section>
             <!-- / Produit ajout panier -->
 
             <!-- Tableau -->
-            <div id="section-2" class="section section-2">
+            <section id="section-2" class="section section-2">
                 <div class="inner">
 
                     <h2>Nos assurances</h2>
@@ -183,69 +183,57 @@
                     </table>
                 </div>
                 <!-- / inner -->
-            </div>
+            </section>
             <!-- / Tableau -->
 
             <!-- Formulaire de contact -->
-            <div id="section-3" class="section section-3">
+            <section id="section-3" class="section section-3">
                 <div class="inner">
-
                     <h2>Nous contacter</h2>
                     <span>Tous les champs avec un * sont obligatoires</span>
-
-                    <form action="#" class="form">
-
-                        <fieldset class="form-block">
-                            <legend>Civilité *</legend>
-                            <div class="choice-civility">
-                                <input type="radio" id="madame" checked>
-                                <label for="madame">Madame</label>
-                            </div>
-                            <div class="choice-civility">
-                                <input type="radio" id="monsieur" >
-                                <label for="monsieur">Monsieur</label>
-                            </div>
-                        </fieldset>
-
-                        <div class="form-block">
-                            <label for="firstName">Prénom *</label>
-                            <input id="firstName" type="text" placeholder="John" aria-required="true" required>
-                            <span class="form-error">Champ obligatoire</span>
+                    
+                    <form action="#" class="form" id="formContact" action="page-access.html" novalidate>
+                      <fieldset class="form-block">
+                        <legend>Civilité *</legend>
+                        <div class="choice-civility">
+                          <input type="radio" id="madame" name="civility" checked>
+                          <label for="madame">Madame</label>
                         </div>
-
-                        <div class="form-block">
-                            <label for="lastName">Nom *</label>
-                            <input id="lastName" type="text" placeholder="Dupont" aria-required="true" required>
-                            <span class="form-error">Champ obligatoire</span>
+                        <div class="choice-civility">
+                          <input type="radio" id="monsieur" name="civility">
+                          <label for="monsieur">Monsieur</label>
                         </div>
-
-                        <div class="form-block">
-                            <label for="phone">Téléphone *</label>
-                            <input id="phone" type="text" placeholder="06 ou 03" aria-required="true" required>
-                            <span class="form-error">Champ obligatoire</span>
-                        </div>
-
-                        <div class="form-block">
-                            <label for="email">Email *</label>
-                            <input id="email" type="email" placeholder="monmail@mail.com" aria-required="true" required>
-                            <span class="form-error">Champ obligatoire</span>
-                        </div>
-
-                        <div class="form-block form-block-btn">
-                            <button>Valider</button>
-                        </div>
-
+                      </fieldset>
+                      
+                      <div class="form-block">
+                        <label for="firstName">Prénom *</label>
+                        <input id="firstName" type="text" placeholder="John" aria-required="true" required>
+                        
+                      </div>
+                      <div class="form-block">
+                        <label for="lastName">Nom *</label>
+                        <input id="lastName" type="text" placeholder="Dupont" aria-required="true" required>
+                      </div>
+                      <div class="form-block">
+                        <label for="phone">Téléphone *</label>
+                        <input id="phone" type="text" placeholder="06 ou 03" aria-required="true" required>
+                      </div>
+                      <div class="form-block">
+                        <label for="email">Email *</label>
+                        <input id="email" type="email" placeholder="monmail@mail.com" aria-required="true" required>
+                      </div>
+                      <div class="form-block form-block-btn">
+                        <button type="submit">Valider</button>
+                      </div>
                     </form>
-                
-                </div>
-            </div>
+                  </div>
+            </section>
             <!-- / Formulaire de contact -->
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <div>© Tous droits réservé Warren Walter</div>
-            
+                       
             <ul class="credits-photo">
                 <li>Logo par <a href="https://dribbble.com/shots/11939156-Don-Viajes">Don-Viajes</a> sur Dribbble.</li>
                 <li>Photo par <a href="https://unsplash.com/@simonmigaj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">S Migaj</a> sur Unsplash</li>
@@ -256,7 +244,8 @@
                 <li>Icon Cross par <a href="https://www.flaticon.com/authors/pixel-perfect">Pixel perfect</a> sur <a href="https://www.flaticon.com/">flaticon</a></li>
             </ul>
 
-        </foo>
+            <span>© Tous droits réservé Warren Walter</span>
+        </footer>
         <!-- / Footer -->
 
     </div>
@@ -264,6 +253,7 @@
 
     <script src="./script/jquery-3-6-0.js"></script>
     <script src="./script/app.js"></script>
+    <script src="./script/form.js"></script>
 
 </body>
 </html>
