@@ -22,16 +22,11 @@
 :root {
     --white: #FFF;
     --black: #0A0907;
-	
     --txt: #384552;
-    
     --red: #D53D0E;
-    
     --orange: #F38B2A;
-    
     --yellow: #F8E9AD;
     --yellow-light: #F5F4D8;
-
     --green-dark: #325747;
     --green-medium: #CDCB45;
     --green: #03BA79;
@@ -57,6 +52,8 @@ body {
     font-weight: 500;
     color: var(--txt);
     font-weight: normal;
+    height: 100vh;
+    width: 100%;
 }
 
 img {

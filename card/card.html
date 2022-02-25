@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice "Card" – Formation Développer des interfaces web accessibles par Warren Walter</title>
-
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
-
+    <body>
+        <div class="container">
     <!-- 
         Instructions :
 
@@ -33,28 +33,62 @@
         Gris clair : #F3F3F3
     -->
 
-    <main class="main" id="main">
-
-        <div class="card">
-            <div class="card-img">
-                <img src="">
+        <main class="main" id="main">
+            <div class="card">
+                <ul class="cards">
+                    <li class="cards--item">
+                        <article class="card">
+                            <div class="card--image card--image"></div>
+                            <div class="card--content--note">
+                                <p class="card--note">4,5 / 5</p>
+                            </div>
+                            <div class="card--content">
+                                <div class="card--category">
+                                    <a href="" class="card--category-link">
+                                        Camping
+                                    </a>
+                                    <a href="" class="card--category-link">
+                                        Randonnée
+                                    </a>
+                                </div>
+                                <h2 class="card--title">Park Sexten en caravane</h2>
+                                <p class="card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elitsed do eiusmod.</p>
+                                <span class="icon icon--comment"><a href="">(252)</a> Commentaires</span>
+                            </div>
+                            <footer class="card--footer">
+                                <span class="price">125 €</span>
+                                <button class="btn--block">Voir</button>
+                            </footer>
+                        </article>
+                    </li>
+                    <!-- <li class="cards--item">
+                        <article class="card">
+                            <div class="card--image card--image"></div>
+                            <div class="card--content--note">
+                                <p class="card--note">4,5 / 5</p>
+                            </div>
+                            <div class="card--content">
+                                <div class="card--category">
+                                    <a href="" class="card--category-link">
+                                        Camping
+                                    </a>
+                                    <a href="" class="card--category-link">
+                                        Randonnée
+                                    </a>
+                                </div>
+                                <h2 class="card--title">Park Sexten en caravane</h2>
+                                <p class="card--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elitsed do eiusmod.</p>
+                                <span class="icon icon--comment"><a href="">(252)</a> Commentaires</span>
+                            </div>
+                            <footer class="card--footer">
+                                <span class="price">125 €</span>
+                                <button class="btn--block">Voir</button>
+                            </footer>
+                        </article>
+                    </li> -->
+                </ul>
             </div>
-            <div class="card-header">
-                <span>4,5 / 5 (252)</span>
-                <span>Camping</span>
-                <span>Randonnée</span>
-            </div>
-            <div class="card-content">
-                <span>Park Sexten en caravane</span>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt consectetur adipiscing elitsed do eiusmod.</span>
-            </div>
-            <div class="card-footer">
-                <span>125 €</span>
-                <span>Voir</span>
-            </div>
-        </div>
-
-    </main>
-
+        </main>
+    </div>
 </body>
 </html>
